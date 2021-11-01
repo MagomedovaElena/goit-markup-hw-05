@@ -59,14 +59,14 @@ color: #212121;
 .navigation a:focus, .navigation a:hover {
     color: #2196F3;
 }
-.current a {
-    color: #2196F3; 
+.current a { 
+    color: #2196F3;    
 }
 .current {
-    position: relative;  
+    position: relative;
 }
 
-.current::after {
+.current a::after {
     position: absolute;
     content: "";
     display: block;
@@ -554,10 +554,10 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
 }
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-}
+} */
    
 
