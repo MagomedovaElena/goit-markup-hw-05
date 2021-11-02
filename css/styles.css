@@ -54,6 +54,7 @@ font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #212121;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation a:focus, .navigation a:hover {
     color: #2196F3;
@@ -97,6 +98,7 @@ color: #757575;
 display: inline-flex;
 align-items: center;
 justify-content: center;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-contact-icon {
     margin-right: 10px;    
@@ -163,9 +165,10 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .zakaz:hover {
- background: #188CE8;
+ background-color: #188CE8;
 }
 .description {
     display: flex;
@@ -285,6 +288,8 @@ margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-team .social-link {
     fill: #AFB1B8;
@@ -321,6 +326,8 @@ margin-bottom: 16px;
     border-radius: 4px;
     padding: 16px 32px;
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-client:hover,
 .button-client:focus {
@@ -354,10 +361,15 @@ line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* transition-property: background-color;
+transition-duration: 250 ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .menu-button:hover,
 .menu-button:focus {
-    background: #2196F3;
+    background-color: #2196F3;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
@@ -378,6 +390,7 @@ cursor: pointer;
 .menu-box {
     display: block;
     max-width: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-box:hover,
 .menu-box:focus {
@@ -410,9 +423,9 @@ cursor: pointer;
 }
 .box-kartinki {
     position: relative;
-    
-  
-
+}
+.kartinki-img {
+    display: block;
 }
 .overlay-kartinki {
     position: absolute;
